@@ -2,7 +2,7 @@
   
   <img src="public/images/logo.png" alt="Abder Abdelatif Logo" width="120" />
   
-  # 💼 Abder Abdelatif | Portfolio
+  # 💼 Aber Abdelatif | Portfolio
   
   ### 🚀 Software Developer & Network Specialist
   
@@ -100,3 +100,4 @@ const frontend = {
   particles: '✨ React TSParticles',
   routing: '🔄 React Router v6'
 }
+
