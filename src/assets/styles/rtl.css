@@ -1,0 +1,49 @@
+/* RTL Specific Styles */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .navbar-logo {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+[dir="rtl"] .nav-menu {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+[dir="rtl"] .home-social {
+  justify-content: flex-end;
+}
+
+[dir="rtl"] .skill-item {
+  text-align: right;
+}
+
+[dir="rtl"] .info-card {
+  text-align: right;
+}
+
+[dir="rtl"] .category-header {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .btn-icon-left {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+[dir="rtl"] .btn-icon-right {
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+[dir="rtl"] .footer-links h4::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .progress-bar {
+  transform-origin: 100% 0;
+}

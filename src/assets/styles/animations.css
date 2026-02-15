@@ -1,0 +1,89 @@
+/* Loading Animation */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loading-spinner {
+  width: 80px;
+  height: 80px;
+  border: 4px solid var(--border-color);
+  border-top-color: var(--gold);
+  border-right-color: var(--blue-light);
+  border-bottom-color: var(--gold-light);
+  border-left-color: var(--blue);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Page Transition */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 500ms, transform 500ms;
+}
+
+/* Hover Effects */
+.hover-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+/* Text Selection */
+::selection {
+  background: var(--gold);
+  color: var(--bg-primary);
+}
+
+::-moz-selection {
+  background: var(--gold);
+  color: var(--bg-primary);
+}
+
+/* Focus Styles */
+:focus {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Print Styles */
+@media print {
+  .no-print { display: none; }
+  body { background: white; color: black; }
+}

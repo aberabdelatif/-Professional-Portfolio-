@@ -1,0 +1,70 @@
+.language-switcher {
+  position: relative;
+  margin: 0 10px;
+}
+
+.lang-button {
+  background: none;
+  border: 1px solid var(--gold);
+  color: var(--text-primary);
+  padding: 8px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.lang-button:hover {
+  background: var(--gold);
+  color: var(--bg-primary);
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 10px;
+  background: var(--card-bg);
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  overflow: hidden;
+  min-width: 150px;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
+.lang-option {
+  width: 100%;
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.lang-option:hover {
+  background: var(--hover-bg);
+  color: var(--gold);
+}
+
+.lang-option.active {
+  background: var(--gold);
+  color: var(--bg-primary);
+}
+
+.lang-flag {
+  font-size: 1.2rem;
+}
+
+[dir="rtl"] .lang-dropdown {
+  right: auto;
+  left: 0;
+}

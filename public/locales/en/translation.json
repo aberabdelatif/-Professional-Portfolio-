@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hello, I'm",
+    "name": "Abder Abdelatif",
+    "title": "Software Developer & Network Specialist",
+    "description": "Professional software developer and network specialist, building innovative applications and complete network solutions. Experienced in from-scratch development and efficient database management.",
+    "contactBtn": "Contact Me",
+    "projectsBtn": "My Work"
+  },
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "What I Master",
+    "development": {
+      "title": "Software Development",
+      "description": "I build applications from scratch using latest technologies"
+    },
+    "database": {
+      "title": "Databases",
+      "description": "I efficiently manage and design databases"
+    },
+    "network": {
+      "title": "Networks",
+      "description": "Specialist in network design and management"
+    }
+  },
+  "projects": {
+    "title": "My Projects & Achievements",
+    "education": {
+      "title": "Education & Certifications",
+      "bachelor": "Bachelor in Computer Science - 2025",
+      "certificates": "Online Certifications"
+    },
+    "viewProject": "View Project",
+    "sourceCode": "Source Code"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Let's Work Together",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "address": "Bouira, Algeria",
+    "sendMessage": "Send Message",
+    "name": "Name",
+    "message": "Message",
+    "send": "Send"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "madeWith": "Made with ❤️ by"
+  }
+}

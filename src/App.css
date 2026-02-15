@@ -1,0 +1,105 @@
+.App {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Progress Bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--secondary-blue));
+  transform-origin: 0%;
+  z-index: 1001;
+}
+
+/* Main Content */
+main {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animation for page transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+/* Loading Animation */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--bg-primary);
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--border-color);
+  border-top-color: var(--gold);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* RTL Specific Adjustments */
+[dir="rtl"] .progress-bar {
+  transform-origin: 100% 0;
+}
+
+[dir="rtl"] .navbar-logo {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection Color */
+::selection {
+  background: var(--gold);
+  color: var(--bg-primary);
+}
+
+/* Focus Styles */
+:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .particles,
+  .progress-bar,
+  .navbar,
+  .footer {
+    display: none;
+  }
+}
